@@ -12,15 +12,8 @@ async function play_w9999() {
   const audio = await get_audio();
 
   // Create PeriodicWave of w9999
-  const len = 5;
-  const imaginary = new Float32Array(len);
-  const real = new Float32Array(len);
-  
-  for (let i = 1; i < len; i += 1) {
-    imaginary[i] = '9';
-    console.log(imaginary[i]);
-  }
-  
+  const real      = new Float32Array([ 0, 0, 0, 0, 0]);
+  const imaginary = new Float32Array([ 0, 9, 9, 9, 9]);
   const w9999 = audio.createPeriodicWave(real, imaginary);
   
   // Make a 440Hz (the default frequency) oscillator with the w9999 periodic wave

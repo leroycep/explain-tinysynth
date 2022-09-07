@@ -1,0 +1,7 @@
+[package]
+name = "explain-tinysynth"
+version = "0.1.0"
+authors = ["LeRoyce <contact@leroycepearson.dev>"]
+
+[dependencies]
+fastrand = "1.8"
